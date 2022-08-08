@@ -1,18 +1,18 @@
 {
-  "name": "@semi-design-solid/semi-design-solid-monorepo",
+  "name": "@[name]/[name]-monorepo",
   "type": "module",
   "version": "1.0.0",
   "private": true,
   "packageManager": "pnpm@7.5.0",
-  "description": "semi-design-solid monorepo template",
+  "description": "[name] monorepo template",
   "author": {
     "name": "SoonIter",
     "email": "1730214056@qq.com"
   },
   "license": "MIT",
-  "repository": "https://github.com/SoonIter/semi-design-solid",
+  "repository": "https://github.com/SoonIter/[name]",
   "bugs": {
-    "url": "https://github.com/SoonIter/semi-design-solid/issues"
+    "url": "https://github.com/SoonIter/[name]/issues"
   },
   "keywords": [
     "semi-design",
@@ -42,7 +42,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@semi-design-solid/shared":"workspace:*"
+    "@[name]/shared":"workspace:*"
   },
   "devDependencies": {
     "@antfu/ni": "^0.16.3",

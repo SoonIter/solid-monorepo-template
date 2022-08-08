@@ -7,4 +7,4 @@ npx degit SoonIter/solid-monorepo-template my-lib-name
 pnpx degit SoonIter/solid-monorepo-template my-lib-name
 ```
 
-then globally search and rewrite "semi-design-solid" to "the-lib-name"
+then globally search and rewrite "[name]" to "the-lib-name"

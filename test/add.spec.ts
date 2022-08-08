@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { add } from "@semi-design-solid/shared";
+import { add } from "@[name]/shared";
 
 describe("add", () => {
   it("adds two numbers", () => {

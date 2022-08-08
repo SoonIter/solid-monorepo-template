@@ -10,7 +10,7 @@
   "dependencies": {
     "@solidjs/router": "^0.4.2",
     "solid-js": "^1.4.8",
-    "@semi-design-solid/shared": "workspace:*"
+    "@[name]/shared": "workspace:*"
   },
   "devDependencies": {
     "prettier": "^2.7.1",
