@@ -1,7 +1,7 @@
 {
   "name": "@[name]/[name]-monorepo",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@7.5.0",
   "description": "[name] monorepo template",
@@ -15,21 +15,14 @@
     "url": "https://github.com/SoonIter/[name]/issues"
   },
   "keywords": [
-    "semi-design",
+    "[name]",
     "solid"
   ],
-  "main": "",
-  "types": "",
-  "files": [
-    "dist",
-    "package.json",
-    "README.md",
-    "LICENSE"
-  ],
   "scripts": {
-    "build": "tsup ./src/index.ts",
-    "release": "nr prerelease && nr build && pnpm publish",
-    "prerelease": "nr lint:fix && nr test:once",
+    "build": "pnpm --filter=!./packages/playground build",
+    "bump": "pnpm changeset && pnpm changeset version",
+    "prerelease": "ni && nr build",
+    "release": "pnpm -r publish",
     "test": "vitest",
     "test:once": "vitest run",
     "test:ui": "vitest --ui",
@@ -42,22 +35,24 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@[name]/shared":"workspace:*"
+    "@solidjs/router": "^0.4.2",
+    "solid-js": "^1.5.2"
   },
   "devDependencies": {
-    "@antfu/ni": "^0.17.2",
-    "@vitest/ui": "^0.22.0",
+    "@antfu/ni": "^0.18.0",
+    "@changesets/cli": "^2.24.4",
+    "@typescript-eslint/parser": "^5.36.1",
+    "@vitest/ui": "^0.22.1",
     "c8": "^7.12.0",
-    "eslint": "^8.22.0",
+    "eslint": "^8.23.0",
     "eslint-plugin-solid": "~0.7.1",
     "happy-dom": "^6.0.4",
     "lint-staged": "13.0.3",
     "simple-git-hooks": "^2.8.0",
-    "tsup": "^6.2.2",
-    "typescript": "^4.7.4",
-    "vite": "^3.0.8",
-    "vitest": "^0.22.0",
-    "@typescript-eslint/parser": "^5.35.1"
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.2",
+    "vite": "^3.0.9",
+    "vitest": "^0.22.1"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"

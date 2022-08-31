@@ -1,13 +1,10 @@
 {
   "name": "@[name]/shared",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "typescript": "^4.7.4"
   },
   "author": "SoonIter",
   "license": "MIT"
